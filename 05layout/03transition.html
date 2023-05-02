@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/03transition.css">
+
+
+<script>
+    const images = ["./src/dog1.jpg", "./src/dog2.jpg", "./src/dog3.jpg", "./src/dog4.jpg", "./src/dog5.jpg"];
+
+    function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    const nums = [];
+        for (let i = 0; i < 3; i++) {
+        const num = getRandomInt(0, 4);
+        nums.push(num);
+    }
+
+    function _init(){
+        let imgoutput;
+        imgoutput = document.getElementById("img1");
+        imgoutput.src=images[nums[0]];
+        imgoutput = document.getElementById("img2");
+        imgoutput.src=images[nums[1]];
+        imgoutput = document.getElementById("img3");
+        imgoutput.src=images[nums[2]];
+    }
+
+
+    window.addEventListener('load', function() { _init(); });
+</script>
+
+</head>
+<body>
+    <div class="tran1">
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+    </div>
+    <div class="tran2">
+        <input type="text">
+        <span></span>
+    </div>
+    <div class="tran3">
+        <div class="trd"><img src="./src/dog1.jpg" id="img1"></div>
+        <div class="trd"><img src="./src/dog2.jpg" id="img2"></div>
+        <div class="trd"><img src="./src/dog3.jpg" id="img3"></div>
+    </div>
+    <div class="tran4">
+        
+    </div>
+
+
+
+
+</body>
+</html>

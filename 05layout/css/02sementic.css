@@ -63,9 +63,12 @@
     flex-grow: 1;
     background-color: antiquewhite;
 }
+
+
+
 .wrapper>main>section:nth-child(3){
     border: 1px solid black;
-    height: 200px;
+    /* height: 200px; */
 }
 .wrapper>main>section:nth-child(3)>article{
     border: 1px solid black;
@@ -88,6 +91,7 @@
     border: 1px solid black;
     width: 300px;
     background-color: wheat;
+    align-content: stretch;
 }
 
 

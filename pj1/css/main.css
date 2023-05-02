@@ -52,6 +52,7 @@
   .imageframe>img{
     width: 100%;
     height: 100%;
+    
   }
   .leftslide-button, .rightslide-button{
     position: absolute;
