@@ -1,0 +1,147 @@
+*{}
+body{
+}
+div{}
+img{}
+main{}
+
+button{
+    border: none;
+    font-weight: bold;
+}
+
+.wrapper--productpage{
+    margin: 100px auto;
+    width: 1200px;
+    height: max-content;
+    padding: 3px;
+}
+.wrapper--productpage>.productmaininfo{
+    margin-top: 30px;
+    height: 500px;
+    display: flex;
+}
+.wrapper--productpage>.productmaininfo>.productmainimg{}
+.wrapper--productpage>.productmaininfo>.productmainimg>img{
+    width: 590px;
+    height: 500px;
+}
+
+.productmaininfo>.productin{
+    height: 500px;
+}
+.productmaininfo>.productin>.productinfo{
+    height: 70%;
+    border-bottom: 1px solid;
+}
+.productmaininfo>.productin>.productinfo>li{
+    padding-left: 10px;
+    margin-left: 4px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 80px;
+    display: flex;
+    list-style: none;
+    width: 600px;
+}
+
+.productinfo>li>div{
+    font-size: 25px;
+    font-weight: 400;
+    flex-grow: 1;
+    height:80px;
+}
+
+
+.productmaininfo>.productin>.buybutton{
+    margin:5px;
+    padding: 5px;
+    line-height: 70px;
+    height: 140px;
+}
+.productmaininfo>.productin>.buybutton>.topbutton{  }
+.productmaininfo>.productin>.buybutton>.topbutton>button{
+    font-size: 25px;
+    width: 100%;
+    height: 50px;
+}
+.productmaininfo>.productin>.buybutton>.bottombutton{
+    width: 100%;
+    display: flex;
+}
+
+.productmaininfo>.productin>.buybutton>.bottombutton>button{
+    font-size: 25px;
+    flex-grow: 1;
+    height: 50px;
+    
+}
+
+.bottombutton>button:last-child{
+    margin-left: 20px;
+}
+
+  
+
+
+/* main middle */
+
+
+.wrapper--productpage>.productpagemiddle{
+     list-style: none;
+    padding: 0px;
+    position: relative;
+    /* border: 1px solid red; */
+    display:flex;
+    justify-content: center;
+    height: max-content;
+}
+
+
+.wrapper--productpage>.productpagemiddle>li{
+    position: relative;
+    list-style: none;
+    font-size: 30px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.wrapper--productpage>.productpagemiddle>li>a{
+    color: grey;
+    margin: 40px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+}
+.productpagemiddle>li>a::after{
+    content: '|';
+    padding: 2px;
+    font-size: 32px;
+    position: absolute;
+    width: 100px;
+
+}
+
+.productpagemiddle>li:first-child>a::before{
+    content: '|';
+    padding: 2px;
+    font-size: 32px;
+    position: relative;
+    padding-right: 40px;
+}
+
+/* main under */
+
+.wrapper--productpage>.detailinfo{
+    display: flex;
+    margin-top: 30px;
+    height: 1200px;
+    border: 1px solid black;
+}
+.wrapper--productpage>.detailinfo>img{
+    margin: auto;
+    width: 600px;
+    height: 600px;
+
+}
