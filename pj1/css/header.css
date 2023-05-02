@@ -1,6 +1,6 @@
 .header{
 
-    height: 198px;
+    height: 208px;
     width: 100%;
     /* width: 1024px; */
     background-color: black;
@@ -20,14 +20,11 @@
     min-width: 60%;
     justify-content: center;
     align-items: center;
-    /* display: flex; */
-    /* border: 1px solid skyblue; */
 }
 .logo {
     width: auto;
     height: 156px;
     position: absolute;
-    /* transform: translate(200%, 12%); */
 
     left: 25px;
     top: 0;
@@ -35,8 +32,6 @@
 
 .banner_top {
     text-align: right;
-    /* transform: translate(73%, 85%); */
-    /* justify-content:right; */
 
 
 }
@@ -44,7 +39,6 @@
 
 }
 .banner_bottom {
-    /* transform: translate(0%, 300%); */
     margin-top: 125px;
 }
 
@@ -69,12 +63,12 @@
 }
 .navbar-nav li{
     width: 150px;
-    height : 30px;
+    height: 30px;
 }
 .nav-item {
     display: inline-block;
     position: relative;
-    top: 0;
+    /* top: 0; */
     /* border: 1px solid orange; */
   }
 
