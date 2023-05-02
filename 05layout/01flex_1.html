@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            /* margin: 0;
+            padding: 0; */
+        }
+
+        .top{
+            height: 40px;
+            display:flex
+        }
+        .top>.left{
+            /* border: 1px solid red; */
+            flex-grow: 1;
+            align-self: center;
+        }
+        .top>.left>.child{
+            margin: 5px;
+            border: 1px solid black;
+            flex-grow: 1;
+            text-align: center;
+            align-self: center;
+        }
+
+        .top>.middle{
+            /* border: 1px solid red; */
+            flex-grow: 6;
+        }
+
+        .top>.right{
+            border: 1px solid black;
+            margin: 5px;
+            flex-grow: 1;
+            display: flex;
+            align-self: center;
+        }
+        .top>.right>.child{
+            border: 1px solid black;
+            flex-grow: 1;
+            text-align: center;
+            margin: 3px;
+        }
+
+
+
+
+        .bottom{
+            display: flex;
+            align-content: stretch;
+            flex-wrap: wrap;
+            margin: 5px;
+        }
+        .bottom>.child{
+            border: 1px solid black;
+            flex-grow: 1;
+            padding: 10px;
+            margin: 1px;
+            text-align: center;
+
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <table border="1px double black"; width="100%";>
+        <tbody>
+            <tr style="height: 40px;">
+                <td>
+                    <div class="top">
+                        <div class="left">
+                            <div class="child">
+                                Logo
+                            </div>
+                        </div>
+                        <div class="middle">
+
+                        </div>
+                        <div class="right">
+                            <div class="child">나의 정보</div>
+                            <div class="child">고객 센터</div>
+                            <div class="child">로그 아웃</div>
+                            <div class="child">기타 등등</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 60px;">
+                <td>
+                    <div class="bottom">
+                        <div class="child">1</div>
+                        <div class="child">2</div>
+                        <div class="child">3</div>
+                        <div class="child">4</div>
+                        <div class="child">5</div>
+                        <div class="child">6</div>
+                    </div>
+
+
+
+                </td>
+            </tr>
+            </td>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
