@@ -43,3 +43,8 @@ function _nextimagefunc(i) {
   let imgoutputmain = document.getElementById("img-output-next");
   imgoutputmain.src = images[i];
 }
+
+
+function tmp(){
+  
+}

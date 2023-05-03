@@ -92,3 +92,53 @@ body{
     transform:translate(100px,100px) rotate(10000000000000deg) scale(2.5, 2.5) skew(40deg, 40deg)
 
 }
+
+.sitemenu{
+    border: 1px solid gray;
+    width: 50px;
+    height: 50px;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sitemenu>input{
+    display:none;
+}
+.sitemenu>input[type='checkbox']:checked+label span:nth-child(1){
+    transform: translate(0px, 10px) rotate(45deg);
+}
+.sitemenu>input[type='checkbox']:checked+label span:nth-child(2){
+    opacity: 0;
+    transition: 0s;
+}
+.sitemenu>input[type='checkbox']:checked+label span:nth-child(3){
+    transform: translate(0px, -10px) rotate(-45deg);
+}
+.sitemenu>input[type='checkbox']:hover+label span:nth-child(2){
+    width: 35px;
+
+} 
+.sitemenu>label{
+    display: block;
+    position: absolute;
+    margin: 0 0;
+}
+.sitemenu>label>span{
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: gray;
+    margin:5px;
+    /* transition: 0.1s; */
+}
+.sitemenu>label>span:nth-child(1){
+    
+}
+.sitemenu>label>span:nth-child(2){
+    width:17px;
+    transition: 0.5s;
+}
+.sitemenu>label>span:nth-child(3){
+    
+}

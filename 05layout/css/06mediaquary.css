@@ -1,0 +1,14 @@
+.media>div{
+    height:150px;
+    background-color: orange;
+}
+
+@media all and (max-width:1024px){
+    .media>div{background-color: green;}
+
+}
+
+@media all and (max-width:400px){
+    .media>div{background-color: blue;}
+
+}
