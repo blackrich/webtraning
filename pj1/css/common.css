@@ -4,7 +4,11 @@
 } */
 
 @import './header.css';
+
 @import './footer.css';
+
+
+
 
 body{
     position: relative; 
@@ -17,7 +21,6 @@ body{
     
     
 }
-
 /* Google Icon Class CSS */
 .material-symbols-outlined {
     font-variation-settings:
@@ -37,3 +40,5 @@ body{
       transform:scale(1.5,1.5);
       transition: 0.15s;
   }
+
+  @import './mheader.css';
