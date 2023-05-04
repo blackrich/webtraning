@@ -1,83 +1,71 @@
 .header{
-
     height: 208px;
     width: 100%;
-    /* width: 1024px; */
     background-color: black;
-    align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     /* border: 1px solid purple; */
-
 }
 
 .banner {
     position: relative; 
     width: 1024px;
-    
-    text-align: center;
-    min-width: 60%;
-    justify-content: center;
-    align-items: center;
+    height: 188px;
 }
-.logo {
-    width: auto;
-    height: 156px;
-    position: absolute;
 
-    left: 25px;
+.logo {
+    position: absolute;
     top: 0;
+    bottom: 0;
+    margin: auto auto;
+}
+.logo>a>img{
+    height: 90%;
 }
 
 .banner_top {
     text-align: right;
-
-
+    height: 30px;
+    top: 0;
 }
 .banner_middle {
 
 }
 .banner_bottom {
-    margin-top: 125px;
-}
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 40px;
+    position: absolute;
 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
 
 
 .navbar {
     display: flex;
-    justify-content: center;
-    align-content: center;
-
-}
-
-.navbar-nav {
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
     width: 40%;
+    min-width: 1024px;
+    justify-content: center;
     /* border: 1px solid red; */
 }
-.navbar-nav li{
+
+.nav-item {
     width: 150px;
     height: 30px;
-}
-.nav-item {
-    display: inline-block;
     position: relative;
     /* top: 0; */
     /* border: 1px solid orange; */
   }
 
 .nav-link {
-    display: block;
-    /* padding: 10px; */
     text-decoration: none;
     color: white;
-    width: 150px;   
     /* border: 1px solid yellow; */
 }
 
@@ -88,23 +76,24 @@
   
 .dropdown-menu {
     background-color: black;
-    display:none;
-    position: absolute;
-    top : 30px;
+    display:none;   
+    top : 0;
     left: 0;
-    text-align: center;
-    /* padding: 10px; */
-    width: 150px; 
+    width: auto;
     z-index: 1;
-    /* transform: translate(-38%, -20%); */
     /* border: 1px solid green; */
   }
+
+  /* .dropdown-menu:hover .dropdown-menu {
+    display: block;
+  } */
   
   .dropdown-item {
-    width: 150px; 
+    width: auto; 
     color: white;
     display: block;
     padding: 5px 0;
     padding-top: 10px 0;
     text-decoration: none;
+    z-index: 1;
   }
