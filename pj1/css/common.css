@@ -4,11 +4,7 @@
 } */
 
 @import './header.css';
-
 @import './footer.css';
-
-
-
 
 body{
     position: relative; 
@@ -40,5 +36,3 @@ body{
       transform:scale(1.5,1.5);
       transition: 0.15s;
   }
-
-  @import './mheader.css';

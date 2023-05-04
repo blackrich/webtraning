@@ -81,6 +81,7 @@
     left: 0;
     width: auto;
     z-index: 1;
+    position: relative;
     /* border: 1px solid green; */
   }
 
