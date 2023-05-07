@@ -1,4 +1,3 @@
-
 /* @import './header.css';
 @import './main.css';
 @import './footer.css'; */
@@ -40,12 +39,14 @@ button {
     display: flex;
     /* justify-content: right; */
 }
+
 .wrapper--productpage>.productmaininfo>.productmainim {
     position: absolute;
     width: 57%;
     height: 100%;
     left: 0px;
-    top: 0; bottom: 0;
+    top: 0;
+    bottom: 0;
     margin: auto;
     perspective: 1000px;
 }
@@ -54,30 +55,35 @@ button {
     width: 100%;
     position: relative;
     height: 100%;
-    top: 0; bottom: 0;
-    margin: auto; 
+    top: 0;
+    bottom: 0;
+    margin: auto;
     transform-style: preserve-3d;
     transition: 2s;
     animation-timing-function: ease-in;
 }
 
 .productmainimg>#frontimg,
-.productmainimg>#backimg{
+.productmainimg>#backimg {
     position: absolute;
-    left: 0; top: 0; right: 0; bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
     margin: auto;
     width: 90%;
     height: auto;
     backface-visibility: hidden;
 }
 
-.productmainimg>#frontimg{
+.productmainimg>#frontimg {
     background-image: url(ddd.jpg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
-.productmainimg>#backimg{
+
+.productmainimg>#backimg {
     height: 90%;
     background-image: url(610a1d43577484.53493169.jpg);
     transform: rotateY(180deg);
@@ -86,14 +92,12 @@ button {
     background-repeat: no-repeat;
 }
 
-.productmainim:hover .productmainimg{
+.productmainim:hover .productmainimg {
     transform: rotateY(540deg);
 }
 
 
-.wrapper--productpage>.productmaininfo>.productmainimg>img {
-    
-}
+.wrapper--productpage>.productmaininfo>.productmainimg>img {}
 
 /* 메인 인포 -가격 등*/
 
@@ -121,32 +125,34 @@ button {
     list-style: none;
     font-size: medium;
     font-weight: 600;
-    padding-left: 2%;flex-wrap: wrap;
-}    
+    padding-left: 2%;
+    flex-wrap: wrap;
+}
 
 .productinfo>li>div {
     font-weight: 400;
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
 
 /* 옵션 */
 
 
-.color ul{
+.color ul {
     padding: 0px;
     list-style: none;
 }
-.color{
+
+.color {
     /* border: 1px solid black; */
 }
 
 
-.color>.option{
+.color>.option {
     flex-grow: 0;
-    background-image: 
-    radial-gradient(ellipse at bottom, darkorange, orange, yellow, white 70%);
-    z-index: 1; 
+    background-image:
+        radial-gradient(ellipse at bottom, darkorange, orange, yellow, white 70%);
+    z-index: 1;
     width: 70%;
     position: relative;
     margin: auto;
@@ -155,7 +161,7 @@ button {
 
 
 
-.color>.option>a{
+.color>.option>a {
     font-style: italic;
     font-size: large;
     font-weight: 700;
@@ -163,51 +169,63 @@ button {
     color: black;
     height: 30px;
     text-align: 30px;
-    list-style:none; 
+    list-style: none;
     text-decoration: none;
     text-shadow: 1px 1px 1px rgb(255, 255, 133);
 }
 
-.color>.option>.optiontwodepth{
+.color>.option>.optiontwodepth {
     display: none;
     position: absolute;
-    width:100%;
-    left: 0; right: 0; 
+    width: 100%;
+    left: 0;
+    right: 0;
 
-    margin:auto;
-    background-image:radial-gradient(ellipse at top, darkorange, orange, yellow, white 70%);
+    margin: auto;
+    background-image: radial-gradient(ellipse at top, darkorange, orange, yellow, white 70%);
     /* border-bottom-left-radius: 30%;
     border-bottom-right-radius: 30%; */
     box-shadow: 1px 1px 1px black;
 }
-.option>.optiontwodepth>li{
-   display: flex;
+
+.option>.optiontwodepth>li {
+    display: flex;
     position: relative;
     padding: 2.5%;
-    list-style: none; 
+    list-style: none;
     text-align: center;
     border-top: 2px solid white;
     translate: -1px -1px;
 }
-.option>.optiontwodepth>li>a{
+
+.option>.optiontwodepth>li>a {
     width: 100%;
     font-size: medium;
     text-decoration: none;
     color: black;
-    font-weight: 700; 
+    font-weight: 700;
     flex-grow: 1;
 }
 
-.option:hover{
+.option:hover {
     box-shadow: 1px 1px 1px black;
     transition: -1px -1px;
+
+
 }
 
-.option:hover .optiontwodepth{
+.optiontwodepth>li:hover a {
+    color: rgb(98, 98, 98);
+    transform: rotate(3deg);
+}
+
+.option:hover .optiontwodepth {
     display: block;
+    transition: 1s;
+
 }
 
-.option:hover a{
+.option:hover a {
     text-shadow: none;
     translate: 1px 1px;
 }
@@ -278,7 +296,7 @@ button {
     display: flex;
     justify-content: center;
     height: max-content;
-     width: fit-content;
+    width: fit-content;
 }
 
 
@@ -294,13 +312,13 @@ button {
     margin: 10px;
     display: block;
     text-decoration: none;
-    text-align: center; 
+    text-align: center;
 }
 
 .productpagemiddle>li>a::after {
     content: '|';
     padding: 2px;
-  
+
 
 }
 
@@ -344,43 +362,105 @@ button {
     top: 45px;
 }
 
-button:hover{
+button:hover {
     box-shadow: 1px 1px 0px black;
-    translate: -1px -1px;    
+    translate: -1px -1px;
     transition: 0.1s;
 }
 
-.productpagemiddle>li>a:hover{
+.productpagemiddle>li>a:hover {
     transform: scale(1.1, 1.1);
 }
 
-.detailsec1{
-    margin: 0 auto;
-    display: flex;
+.detailsec1 {
+    width: 100%;
+    margin: 30px auto;
+
 }
 
 
-.detailsec1>article{
+.detailsec1>article {
     width: 100%;
 }
-.detailsec1>article>div{
+
+.detailsec1>article>div {
     height: fit-content;
 }
-.detailsec1>article>div>img{
+
+.detailsec1>article>div>img {
     max-width: 90%;
     margin: 5%;
 }
 
-.detailsec2{
+.detailsec2 {
+    width: 80%;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: space-between;
     display: flex;
-    padding: 10px;
-    margin-top: 3%;
+    position: relative;
+
 }
-.detailsec2>article{
+
+.detailsec2>article {
+    width: 55%;
     text-align: center;
     font-weight: 600;
 
 }
-.detailsec2>aside{
 
+.detailsec2>article>img{
+ width: 100%;
+ height: fit-content
+}
+
+.detailsec2>aside {
+    width: 45%;
+    height: fit-content;
+    font-size: 0.3rem;
+    text-align:left;
+    line-height: 13px;
+}
+
+.dtinfo{
+    width: 100%;
+    height: max-content;
+    padding: 2%;
+    position: relative;
+
+}
+
+.dtinfo>article{
+    line-height: 40px;
+    text-align: center;
+    font-weight: 500;
+    padding: auto;
+    font-size: small;
+}
+
+
+.dtinfo>article>div{
+    text-align: center;
+    font-size: large;
+    font-weight: 800;
+    margin: 30px;
+    font-style: italic;
+}
+
+.dtinfo>article>p{
+    margin: 10px auto;
+    width: 100%;
+    border: 1px dashed rgb(192, 192, 192);
+}
+
+.warninfo{
+    width: 70%;
+    left: 0; right: 0;
+    margin: 20px auto;
+    font-size: 5px;
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    color: rgb(248, 0, 0);
+    font-weight: 700;
 }
