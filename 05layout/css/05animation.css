@@ -1,0 +1,201 @@
+.ani{
+    width: 400px;
+    height: 200px;
+}
+.ani>div{
+    width: 400px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid black;
+}
+#d1{
+    animation-name: moving1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#d2{
+    animation-name: moving2;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes moving1{
+    from{
+        margin-left:100%;
+    }
+    to{
+        margin-left:0%;
+    }
+}
+@keyframes moving2{
+    from{
+        margin-top:100%;
+    }
+    to{
+        margin-top:0%;
+    }
+}
+
+
+.animation-test{
+    width: 400px;
+    position: relative;
+    /* top: 50px; */
+    left: 450px;
+}
+.animation-test>div{
+    width: 400px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid black;
+}
+.animation-test>.d1{
+    animation-name: moving1;
+    animation-duration: 1.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.animation-test>.d2{
+    animation-name: moving3;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.animation-test>.d3{
+    animation-name: moving2;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes moving3{
+    from{
+        margin-left:100%;
+        margin-top:100%;
+    }
+    to{
+        margin-left:0%;
+        margin-top:0%;
+    }
+}
+
+
+
+
+.ani2>div{
+    border:1px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+}
+.ani2>.d1{
+    animation-name: moving4;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+.ani2>.d2{
+    animation-name: moving5;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes moving4{
+    from{
+        margin-left:0%;
+        margin-top:0%;
+    }
+    to{
+        margin-left:100%;
+        margin-top:100%;
+    }
+    0%{background-color: red;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    80%{background-color: blue;}
+    100%{background-color: purple;}
+}
+@keyframes moving5{
+    from{
+
+    }
+    to{
+
+    }
+    0%{background-color: red; transform: rotate(1080deg) scale(3, 3);}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    80%{background-color: blue;}
+    100%{background-color: purple;}
+}
+
+
+
+
+
+.ani3>div{
+    border:1px solid black;
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+    position: relative;
+    margin: 5px;
+}
+.ani3>.d1{
+    animation-name: moving7;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+.ani3>.d2{
+    animation-name: moving7;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+.ani3>.d3{
+    animation-name: moving7;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+.ani3>.d4{
+    animation-name: moving7;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.ani3>.d5{
+    animation-name: moving7;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes moving7{
+    from{
+        margin-left:0px;
+    }
+    to{
+        margin-left:1000px;
+    }
+}

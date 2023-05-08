@@ -4,7 +4,6 @@
 } */
 
 @import './header.css';
-@import './main.css';
 @import './footer.css';
 
 body{
@@ -18,7 +17,6 @@ body{
     
     
 }
-
 /* Google Icon Class CSS */
 .material-symbols-outlined {
     font-variation-settings:

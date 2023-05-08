@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>쿠키 삭제 예제</title>
+  </head>
+  <body>
+    <h1>쿠키 삭제 예제</h1>
+
+    <button onclick="deleteCookie()">쿠키 삭제</button>
+
+    <script>
+      // 쿠키 삭제 함수
+      function deleteCookie() {
+        document.cookie = "isLoggedIn=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        alert("쿠키가 삭제되었습니다.");
+      }
+    </script>
+  </body>
+</html>

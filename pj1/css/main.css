@@ -16,6 +16,13 @@
   min-width: 60%;
 }
 
+.main>aside{
+  width: 10%;
+}
+.main>article{
+  flex-grow: 1;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 4fr);

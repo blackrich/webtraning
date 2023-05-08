@@ -1,0 +1,15 @@
+.wrapper>header>.top-header {
+    display: block;
+    height:auto;
+}
+.wrapper>header>.top-header>.logo {
+    width: auto;
+}
+
+.wrapper>header>.top-header>ul {
+    justify-content: space-between;
+}
+
+.wrapper>header>nav>ul>li {
+    flex-basis: 480px;
+}

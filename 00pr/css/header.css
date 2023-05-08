@@ -1,0 +1,79 @@
+.banner{
+    /* border: 1px solid red; */
+    height: 202px;
+    background-color: black;
+    position: relative;
+}
+
+.bannertop{
+    height: 30px;
+}
+
+.bannerbot{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+
+    /* border: 1px solid orange; */
+}
+
+.bannerbot li, .bannerbot ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bannerbot li{
+    text-align: center;
+}
+
+
+.depth1{
+    display: flex;
+    width: 40%;
+    min-width: 1024px;
+    height: 30px;
+    justify-content: space-evenly;
+    /* border: 1px solid yellow; */
+}
+.depth1item{
+    position: relative;
+    width: 150px;
+    height: 30px;
+    /* border: 1px solid yellowgreen; */
+}
+.depth1item>a{
+    color: white;
+    text-decoration: none;
+}
+
+.depth1item:hover .depth2{
+    display: block;
+}
+
+.depth2{
+    position: relative;
+    display: none;
+    width: auto;
+    /* border: 1px solid green; */
+}
+.depth2item{
+    position: relative;
+    width: auto;
+    height: 30px;
+    border: 1px solid;
+    background-color: black;
+}
+
+
+.depth2item>a{
+    color: white;
+    text-decoration: none;
+}

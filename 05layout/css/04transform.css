@@ -1,0 +1,139 @@
+body{
+    display: flex;
+}
+
+.container{
+    margin: 50px;
+
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    position:relative;
+}
+.container>.item{
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    font-size: 60px;
+    text-align: center;
+    font-size: 60px;
+    line-height: 200px;
+    color: black;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    /* transition: 1s; */
+    transition: 3600s;
+}
+.container:hover .item{
+    /* transform: perspective(300px) rotateY(90deg); */
+    transform: perspective(25px) rotateY(6000000000000deg) rotateX(6000000000000deg) scale(3, 3);
+    backface-visibility: hidden;
+}
+
+
+
+
+.container2{
+    margin:50px;
+    width: 150px;
+    height: 150px;
+    
+}
+.container2>.card{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+    position: fixed;
+}
+.card:hover{
+    transform: perspective(300px) rotateY(180deg);
+}
+.container2>.card>.front,
+.container2>.card>.back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    backface-visibility: hidden;
+    text-align: center;
+    line-height: 200px;
+}
+.container2>.card>.front{
+    background-color: yellow;
+    color: black;
+}
+.container2>.card>.back{
+    background-color: black;
+    color: yellow;
+    transform: rotateY(180deg);
+}
+
+
+
+.container3{
+    margin:50px;
+    width: 150px;
+    height: 150px;
+    
+}
+.container3>.card{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 10s;
+    position: fixed;
+}
+.container3>.card:hover{
+    transform: perspective(300px) rotateY(3600deg);
+}
+.container3>.card>.c1,
+.container3>.card>.c2,
+.container3>.card>.c3,
+.container3>.card>.c4,
+.container3>.card>.c5,
+.container3>.card>.c6,
+.container3>.card>.c7{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    backface-visibility: hidden;
+    text-align: center;
+    line-height: 200px;
+}
+.container3>.card>.c1{
+    background-color: red;
+}
+.container3>.card>.c2{
+    background-color: orange;
+    transform: rotateY(51deg);
+}
+.container3>.card>.c3{
+    background-color: yellow;
+    transform: rotateY(102deg);
+}
+.container3>.card>.c4{
+    background-color: green;
+    transform: rotateY(154deg);
+}
+.container3>.card>.c5{
+    background-color: blue;
+    transform: rotateY(205deg);
+}
+.container3>.card>.c6{
+    background-color: navy;
+    transform: rotateY(256deg);
+}
+.container3>.card>.c7{
+    background-color: purple;
+    transform: rotateY(308deg);
+}
