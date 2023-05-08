@@ -10,9 +10,9 @@
     height: fit-content;
     min-height: 300px;
     justify-content: space-between;
-
  }
 
+ /* 메인 이미지 파일 서낵 */
 
  .addmainimg{
     margin: 0 auto;
@@ -29,17 +29,21 @@
     width: 70%;
     height: 70%;
  }
+
+ /* 메인 정보 등록 버튼 */
 .addbutton {
     position: relative;
     left: 10%;
     bottom: 0px;
     width: 80%;
     height: 18%;
- 
 
 }
+
+
 .addbutton>.addbutton2 {
     width: 100%;
+    height: 100%;
 }
 
 .addbutton>.addbutton2>button {
@@ -51,12 +55,8 @@
     width: 100%;
     height: 50%;
 }
-.productin{
-    width: 50%;
-    position: relative;
-    list-style: none;
+/* 상위 wrapper */
 
-}
 .productinfo{
     display: flex;
     width: 100%;
@@ -64,11 +64,21 @@
     justify-content: space-between;
 }
 
+
+/* 제품 메인정보 폼 */
+.productin{
+    width: 50%;
+    position: relative;
+    list-style: none;
+}
+
+
 .productinfor{
 
     height: 100%;
     justify-content: space-around;
 }
+
 
 .productinfo>.addmaininformation{
     height: 20%;

@@ -77,7 +77,7 @@ button {
 }
 
 .productmainimg>#frontimg {
-    background-image: url(ddd.jpg);
+    background-image: url("../src/ddd.jpg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,7 +85,7 @@ button {
 
 .productmainimg>#backimg {
     height: 90%;
-    background-image: url(610a1d43577484.53493169.jpg);
+    background-image:url("../src/frontt.jpg");
     transform: rotateY(180deg);
     background-size: contain;
     background-position: center;
