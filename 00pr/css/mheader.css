@@ -1,16 +1,12 @@
-.header{
+.banner{
     width: 100%;
     height: auto;
-    /* width: auto; */
-}
-.banner{
-    width: auto;
 }
 
-.banner_top{
+.bannertop{
 text-align: center;
 }
-.banner_middle{
+.bannermid{    
     line-height: 30px;
 }
 
@@ -20,49 +16,29 @@ text-align: center;
 }
 
 
-.banner_bottom {
+
+.bannerbot {
     display: block;
+    /* position:absolute; */
+    /* position:relative; */
     justify-content: center;
     align-content: center;
     width: 100%;
     position: relative;
 }
-.navbar{
+.depth1{
     min-width: 100%;
     display: block;
     background-color: black;
     position:absolute;
 
 }
-.nav-item {
+.depth1item {
     left: 0;
     right: 0;
     width: 100%;
     justify-content: center;
     
     background-color: black;
-}
-
-
-
-
-
-/* 
-.banner_bottom {
-    display: block;
-    justify-content: center;
-    align-content: center;
-}
-.navbar{
-    width: auto;
-    min-width: none;
-    display: block;
-    background-color: black;
 
 }
-.nav-item {
-    left: 0;
-    right: 0;
-    justify-content: center;
-} 
-*/
