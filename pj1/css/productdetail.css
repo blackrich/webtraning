@@ -168,7 +168,7 @@ button {
     display: block;
     color: black;
     height: 30px;
-    text-align: 30px;
+    /* text-align: 30px; */
     list-style: none;
     text-decoration: none;
     text-shadow: 1px 1px 1px rgb(255, 255, 133);
@@ -195,7 +195,6 @@ button {
     list-style: none;
     text-align: center;
     border-top: 2px solid white;
-    translate: -1px -1px;
 }
 
 .option>.optiontwodepth>li>a {
@@ -209,7 +208,6 @@ button {
 
 .option:hover {
     box-shadow: 1px 1px 1px black;
-    transition: -1px -1px;
 
 
 }
@@ -227,7 +225,6 @@ button {
 
 .option:hover a {
     text-shadow: none;
-    translate: 1px 1px;
 }
 
 
@@ -277,7 +274,6 @@ button {
     width: 48%;
     font-size: medium;
     height: 70%;
-    justify-content: space-a;
 }
 
 
@@ -364,7 +360,6 @@ button {
 
 button:hover {
     box-shadow: 1px 1px 0px black;
-    translate: -1px -1px;
     transition: 0.1s;
 }
 
@@ -434,7 +429,6 @@ button:hover {
     line-height: 40px;
     text-align: center;
     font-weight: 500;
-    padding: auto;
     font-size: small;
 }
 
